@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@600;700&display=swap');
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: rotateX(-100deg);
+        transform-origin: top;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+        transform-origin: top;
+    }
+}
+
+.annsmnt{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Rokkitt, serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 14pt;
+    height: 370px;
+    background-color: #C4C4C4;
+    animation: show 1s ease 0s 1 alternate forwards;
+}
+
+#show_more{
+
+    font-family: Rokkitt, serif;
+    font-size: 14pt;
+    background: #998787;
+    border-radius: 42px;
+    border: 0px;
+    transition: all 500ms;
+    height: 40px;
+    width: 50%;
+}
+
+#show_more:hover{
+    background: rgba(91,91,91,0.76);
+    transform: scale(1.15);
+}
+
+#show_more:active{
+    background: rgba(41,41,41,0.76);
+}
